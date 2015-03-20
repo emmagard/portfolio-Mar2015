@@ -1,9 +1,14 @@
 $(document).ready(function(){
-  $('.single-item').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
+  $('#reveal-arrow1').on('click',function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('#first-section').offset().top
+    }, 1200);
+  });
+  $('#reveal-arrow2').on('click',function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('#second-section').offset().top
+    }, 1200);
   });
 });
