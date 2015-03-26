@@ -14,69 +14,85 @@
   </head>
 
   <body>
-    <header>
+    <nav>
+      <ul>
+        <li><a class= "active" href= "#home">Home</a></li>
+        <li><a href= "#first-section">About</a></li>
+        <li><a href= "#second-section">Tech Projects</a></li>
+        <li><a href= "#third-section">Other Projects</a></li>
+        <li><a href= "#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id= "home">
+
       <hgroup>
         <h1>EMMA GARDNER</h1>
         <h3>Front End Developer</h3>
       </hgroup>
-      <a href= "#"><i title= "Click me" id= "reveal-arrow1" class= "fa fa-angle-double-down fa-5x "></i></a>
-    </header><!-- header -->
+    </section><!-- header -->
 
     <section id= "first-section">
       <div class= "about">
-        <p>I'm a builder and a maker, passionate about learning. I love combining different elements to create a functional unified product.</p>
-        <a href= "#"><i title= "Click me" id= "reveal-arrow2" class= "fa fa-angle-double-down fa-2x "></i></a>
+        <p>I'm a builder and a maker, passionate about learning. I love combining different elements to create a functional unified product. I love javascript and would like to continue to learn about it as both a client and server side tool.</p>
       </div>
     </section><!-- first-section -->
 
     <section id= "second-section">
+      <div id= "project-group">
+        <figure class= "project-content">
+          <a href= "https://github.com/emmagard/weather" target= "blank">
+            <img src= "assets/images/localhost_8000___.jpg" width= "25%" height= "25%">
+          </a>
+            <figcaption><p class= "figcap">My most recent work. I am using <b>AngularJS</b> to display the forecast for today, tomorrow, and for the next 5 days. Almost ready for deployment! Clicking the image will take you to the <b>GitHub</b> repo for this project.</p></figcaption>
+        </figure>
 
-        <div id= "project-group">
-          <figure class= "project-content">
-            <a href= "https://github.com/emmagard/weather" target= "blank">
-              <img src= "assets/images/localhost_8000___.jpg" width= "25%" height= "25%">
-            </a>
-              <figcaption><p class= "figcap">My most recent work. I am using <b>AngularJS</b> to display the forecast for today, tomorrow, and for the next 5 days. Almost ready for deployment! Clicking the image will take you to the <b>github</b> repo for this project.</p></figcaption>
-          </figure>
+        <figure class= "project-content">
+          <a href= "http://www.quadrupedsllc.com/" target= "blank">
+            <img src= "assets/images/Quadrupeds.jpg"  width= "25%" height= "25%">
+          </a>
+            <figcaption><p class= "figcap">Quadrupeds pet services. An informational site for a friend's growing business. I kept it simple using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Foundation</b>. It was really exciting to build a website that was going to help a business grow.</p></figcaption>
+        </figure>
 
-          <figure class= "project-content">
-            <a href= "http://www.quadrupedsllc.com/" target= "blank">
-              <img src= "assets/images/Quadrupeds.jpg"  width= "25%" height= "25%">
-            </a>
-              <figcaption><p class= "figcap">Quadrupeds pet services. An informational site for a friend's growing business. I kept it simple using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Foundation</b>.</p></figcaption>
-          </figure>
+        <figure class= "project-content">
+          <a href= "http://helloboston.herokuapp.com/" target= "blank">
+            <img src= "assets/images/AtAGlance.jpg" width= "25%" height= "25%">
+          </a>
+            <figcaption>
+            <p class= "figcap">For my first project in General Assembly's Web Development Immersive program I created a community website for the city of Boston. Check the weather, Instagram, and read articles with the help of <b>APIs</b>. I used <b>Ruby on Rails</b> to create a posting feature and <b>Ajax</b> to assist in the insertion of the comments. I had <b>Bootstrap</b>'s help to stylize this project. Other Technologies used: <b>PostgreSQL</b></p></figcaption>
+        </figure>
 
-          <figure class= "project-content">
-            <a href= "http://helloboston.herokuapp.com/" target= "blank">
-              <img src= "assets/images/AtAGlance.jpg" width= "25%" height= "25%">
-            </a>
-              <figcaption>
-              <p class= "figcap">For my first project in General Assembly's Web Development Immersive program I created a community website for the city of Boston. Check the weather, Instagram, and read articles with the help of <b>APIs</b>. I used <b>Ruby on Rails</b> to create a posting feature and <b>Ajax</b> to assist in the insertion of the comments. I had <b>Bootstrap</b>'s help to stylize this project. Other Technologies used: <b>PostgreSQL</b></p></figcaption>
-          </figure>
-
-          <figure class="project-content">
-            <a href= "http://emmagard.github.io/" target= "blank">
-              <img src= "assets/images/About_Emma.jpg" width= "25%" height= "25%">
-            </a>
-              <figcaption><p class= "figcap">This is my very first website I ever made and deployed! I've defintiely grown over the past year. I only used <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> (to create my own image slider). This was when I learned how difficult it is to position elements where you want them!</p></figcaption>
-          </figure>
-        </div><!-- project-group -->
-
+        <figure class="project-content">
+          <a href= "http://emmagard.github.io/" target= "blank">
+            <img src= "assets/images/About_Emma.jpg" width= "25%" height= "25%">
+          </a>
+            <figcaption><p class= "figcap">This is my very first website I ever made and deployed! I've defintiely grown over the past year. I only used <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> (to create my own image slider). This was when I learned how difficult it is to position elements where you want them!</p></figcaption>
+        </figure>
+      </div><!-- project-group -->
     </section><!-- second-section -->
 
-    <!--<div class= "other">
+    <section id= "third-section">
+      <div class= "other">
         <div id="creative-group">
-          <h2>Other Creative</h2>
-          <p>Lorem ipsum dolor sit amet, cibo detracto dissentias per eu, luptatum facilisis voluptatibus per no. Velit alienum repudiare te duo, prima simul at qui. Eos diam aliquam consetetur ad, eam ut utroque gloriatur, ad posse atomorum signiferumque sed. Eum stet etiam movet eu, quod ferri impedit no est. Ad sale consul has.</p>
-
-          <p>Usu cu dicta aliquip, quo eu discere legendos constituto. Quis labores cu est. Nullam antiopam ut eos, malis commodo deserunt at his. Duo accusamus reprehendunt an, ridens scripserit vel ei. Autem iracundia prodesset nec no, sit cu viderer impedit legendos. Oh yea... I like pink.</p>
+          <div class="single-item">
+            <div><img class= "creative" src= "assets/images/DSC00531.JPG" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/DSC00534.JPG" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_4370.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/picstitch.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_2951.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_1255.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_0084.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_0137.jpg" height="400px" width="400px"></div>
+            <div><img class= "creative" src= "assets/images/IMG_0067.jpg" height="400px" width="400px"></div>
+          </div>
         </div>
-      </div>-->
+      </div>
+    </section><!-- third-section -->
 
-    <footer>
+
+    <section id="contact">
     <!-- <img src="assets/images/GA_08_14-154.jpg" id="portrait">-->
-      <div id="footer-content">
-        <h1 id="footer-heading">EMMA GARDNER</h1>
+      <div id="contact-content">
+        <h1 id="contact-heading">EMMA GARDNER</h1>
         <p>Boston, MA
         <br>
         781.385.9124
@@ -90,7 +106,7 @@
         </p>
       </div>
 
-    </footer>
+    </section>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

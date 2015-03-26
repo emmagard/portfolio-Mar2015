@@ -1,12 +1,62 @@
 /*-----------------------------HEADER----------------------------------*/
 
-header{
+#home{
   background: url("../images/IMG_1376.jpg") no-repeat center center;
   height: 100%;
   width: 100%;
   background-size: cover;
   max-height: 100%;
   color: white;
+}
+
+nav{
+  position: fixed;
+  z-index: 500;
+  background-color: rgba(255,255,255,0.5);
+  width: 100%;
+  display: none;
+}
+
+nav ul{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 2rem;
+  padding: 5px 25px;
+}
+
+nav ul li a{
+  color: white;
+  padding: 5px 10px;
+  border-radius: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+nav ul li a:hover{
+  color: rgba(0,0,0,0.6);
+}
+
+nav ul li a:focus{
+  color: white;
+}
+
+
+.active{
+  color: rgba(0,0,0,0.75);
+  background-color: rgba(188,188,188, 1);
+}
+
+.active:hover{
+  color: rgba(0,0,0,0.75);
+}
+
+.active:focus{
+  color: rgba(0,0,0,0.75);
 }
 
 hgroup{
@@ -21,7 +71,7 @@ hgroup h1{
   letter-spacing: 4px;
   color: white;
   margin: 0;
-  padding-top: 23%;
+  padding-top: 20%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,13 +79,6 @@ hgroup h3{
   text-align: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
-}
-
-i#reveal-arrow1{
-  color: white;
-  text-align: center;
-  margin-top: auto;
-  display: block;
   -webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
       -animation: pulsate .8s infinite alternate;
@@ -54,14 +97,7 @@ i#reveal-arrow1{
   to {opacity: 0;}
 }
 
-/*-----------------------FIRST-SECTION--------------------------------*/
-
-i#reveal-arrow2{
-  color: black;
-  -webkit-animation: pulsate .8s infinite alternate;
-    -moz-animation: pulsate .8s infinite alternate;
-      -animation: pulsate .8s infinite alternate;
-}
+/*-----------------------FIRST-SECTION-ABOUT--------------------------------*/
 
 #first-section{
   background: url("../images/index_html.jpg") no-repeat center top fixed;
@@ -75,7 +111,7 @@ i#reveal-arrow2{
 
 .about{
   background-color: rgba(255,255,255,0.85);
-  text-align: center;
+  text-align: left;
   margin: 10% 0 0 60% ;
   width: 40%;
   z-index: 200;
@@ -91,32 +127,22 @@ i#reveal-arrow2{
 .about p{
   font-size: 1.5rem;
   margin: 20px;
+  color: #333;
 }
 
-/*-----------------------SECOND-SECTION--------------------------------*/
+/*-----------------------SECOND-SECTION-PROJECTS--------------------------------*/
 
 #second-section{
-  background: url("../images/IMG_5040.jpg") no-repeat center bottom fixed;
+  background: url("../images/IMG_5040.jpg") no-repeat center bottom scroll;
+  background-size: cover;
   height: 100%;
   width: 100%;
   float: left;
   position: relative;
 }
 
-/*#projects{
-  postion: absolute;
-  z-index: 200;
-  height: 45%;
-  width: 100%;
-  background-color: rgba(255,255,255,0.85);
-  margin-top: 20%;
-  -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-    -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-      box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-}*/
-
 #project-group{
-  padding-top: 8%;
+  padding-top: 5%;
 }
 
 .project-content{
@@ -151,7 +177,7 @@ i#reveal-arrow2{
   z-index: 100;
   color: black;
   display: inline;
-  text-align: center;
+  text-align: left;
 }
 
 figcaption p{
@@ -167,55 +193,90 @@ figcaption p{
 .project-content a:hover + figcaption p{
   opacity: 1;
 }
-/*---------------------------THIRD-SECTION--------------------------------*/
+/*---------------------------THIRD-SECTION-OTHER--------------------------------*/
+
+#third-section{
+  background: url("../images/IMG_4132.jpg") no-repeat center bottom;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+#third-section h2{
+  color: white;
+  text-align: center;
+}
 
 .other{
-  background-color: rgba(255,255,255,0.85);
+  color: white;
+  background-color: rgba(250,197,233,0.7);
   text-align: left;
-  margin: 20% 60% 0 0 ;
-  width: 60%;
+  margin: 10% 30%;
+  width: 40%;
   z-index: 200;
   position: absolute;
   padding: 20px;
-  border-radius: 0 40px 40px 0;
+  border-radius: 40px;
   font-family: 'Montserrat', sans-serif;
   -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
     -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
     box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
 }
 
-/*-------------------------------FOOTER--------------------------------*/
-
-footer{
-  background-color: #F961B1;
-  text-align: left;
-  padding-top: 30px;
-  padding-bottom: 35px;
-  clear: both;
+.slick-slide img{
+  margin: 4% auto;
 }
 
-#footer-heading{
+/*-------------------------------CONTACT--------------------------------*/
+
+#contact{
+  background: url("../images/IMG_1823.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+
+#contact-content{
+  margin: 18% 30%;
+  background-color: rgba(255,255,255,0.7);
+  position: absolute;
+  display: block;
+  width: 40%;
+  border-radius: 40px;
+  padding: 3%
+}
+
+#contact-heading{
   font-size: 2rem;
-  color: white;
+  color: #333;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
-#footer-content{
-  margin-left: 75px;
-}
-
-#footer-content p{
+#contact-content p{
   margin-right: 10px;
-  color: white;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
 }
 
 .icon{
-  color: white;
+  color: #333;
   background-color: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-right: 2% ;
+  margin-left: 2%;
 }
 
-.icon :hover{
+.icon:hover{
+  color: pink;
+}
+
+.icon:focus{
   color: pink;
 }
