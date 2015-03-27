@@ -229,6 +229,10 @@ figcaption p{
   margin: 4% auto;
 }
 
+figcaption.creative-caption{
+  text-align: center;
+}
+
 /*-------------------------------CONTACT--------------------------------*/
 
 #contact{
