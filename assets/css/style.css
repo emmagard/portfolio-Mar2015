@@ -32,7 +32,7 @@ nav ul li{
 nav ul li a{
   color: white;
   padding: 5px 10px;
-  border-radius: 40px;
+  border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -133,7 +133,7 @@ hgroup h3{
 /*-----------------------SECOND-SECTION-PROJECTS--------------------------------*/
 
 #second-section{
-  background: url("../images/IMG_5040.jpg") no-repeat center bottom scroll;
+  background: url("../images/IMG_4132.jpg") no-repeat center bottom scroll;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -196,7 +196,7 @@ figcaption p{
 /*---------------------------THIRD-SECTION-OTHER--------------------------------*/
 
 #third-section{
-  background: url("../images/IMG_4132.jpg") no-repeat center bottom;
+  background: url("../images/IMG_5040.jpg") no-repeat center bottom;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -210,14 +210,14 @@ figcaption p{
 }
 
 .other{
-  color: white;
-  background-color: rgba(250,197,233,0.7);
+  color: #333;
+  background-color: rgba(255,255,255,0.85);
   text-align: left;
   margin: 10% 30%;
   width: 40%;
   z-index: 200;
   position: absolute;
-  padding: 20px;
+  padding: 10px 20px 5px 20px;
   border-radius: 40px;
   font-family: 'Montserrat', sans-serif;
   -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
