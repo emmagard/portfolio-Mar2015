@@ -80,9 +80,9 @@ hgroup h3{
   text-align: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  -webkit-animation: pulsate .8s infinite alternate;
+  /*-webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
-      -animation: pulsate .8s infinite alternate;
+      -animation: pulsate .8s infinite alternate;*/
 }
 
 @-webkit-keyframes pulsate{
