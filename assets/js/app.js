@@ -7,8 +7,8 @@ $(document).ready(function(){
 
     var fullUrl = this.href;
     console.log(this.href);
-    var seperatedUrl = fullUrl.split('#');
-    var targ = seperatedUrl[1];
+    var separatedUrl = fullUrl.split('#');
+    var targ = separatedUrl[1];
     var targetOffsetTop = $('#'+ targ).offset().top;
 
     var a = $('nav ul').children().children();

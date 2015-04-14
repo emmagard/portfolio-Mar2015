@@ -1,0 +1,54 @@
+#contact{
+  background: url("../images/IMG_1823.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+#contact-content{
+  -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
+    -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
+      box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
+  margin: 15% 30% 0;
+  background-color: rgba(255,255,255,0.7);
+  position: absolute;
+  display: block;
+  width: 40%;
+  border-radius: 40px;
+  padding: 2%;
+}
+
+#contact-heading{
+  padding-top: 3.5%;
+  font-size: 2rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+#contact-content p{
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.icon{
+  color: #333;
+  background-color: none;
+  font-size: 2rem;
+  margin-right: 2% ;
+  margin-left: 2%;
+}
+
+.icon:hover{
+  color: pink;
+}
+
+.icon:focus{
+  color: pink;
+}
