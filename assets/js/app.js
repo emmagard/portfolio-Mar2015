@@ -11,11 +11,11 @@ $(document).ready(function(){
     var targ = separatedUrl[1];
     var targetOffsetTop = $('#'+ targ).offset().top;
 
-    var a = $('nav ul').children().children();
-    a.removeClass('active');
+    // var a = $('nav ul').children().children();
+    // a.removeClass('active');
 
-    $(this).addClass('active');
-    console.log(this);
+    // $(this).addClass('active');
+    // console.log(this);
 
     $('html, body').animate({
       scrollTop: targetOffsetTop
