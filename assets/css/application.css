@@ -15,10 +15,7 @@
   position: absolute;
   padding: 20px;
   border-radius: 40px 0 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  -moz-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75); }
+  font-family: 'Montserrat', sans-serif; }
 
 .about p {
   font-size: 1.5rem;
@@ -35,11 +32,8 @@
   position: relative; }
 
 #contact-content {
-  -webkit-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  -moz-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
   margin: 15% 30% 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
   position: absolute;
   display: block;
   width: 40%;
@@ -66,12 +60,10 @@
   font-size: 2rem;
   margin-right: 2%;
   margin-left: 2%; }
-
-.icon:hover {
-  color: pink; }
-
-.icon:focus {
-  color: pink; }
+  .icon:hover {
+    color: pink; }
+  .icon:focus {
+    color: pink; }
 
 #home {
   background: url("../images/IMG_1376.jpg") no-repeat center bottom;
@@ -79,7 +71,7 @@
   width: 100%;
   background-size: cover;
   max-height: 100%;
-  color: white; }
+  color: #fff; }
 
 hgroup {
   font-family: 'Montserrat', sans-serif;
@@ -91,14 +83,14 @@ hgroup h1 {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 4px;
-  color: white;
+  color: #fff;
   margin: 0;
   padding-top: 20%;
   font-family: 'Montserrat', sans-serif; }
 
 hgroup h3 {
   text-align: center;
-  color: white;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   /*-webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
@@ -141,10 +133,7 @@ hgroup h3 {
   position: absolute;
   padding: 10px 20px 5px 20px;
   border-radius: 40px;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  -moz-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
-  box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75); }
+  font-family: 'Montserrat', sans-serif; }
 
 .slick-slide img {
   margin: 4% auto; }
@@ -180,13 +169,12 @@ figcaption.creative-caption {
   -moz-filter: grayscale(100%);
   filter: gray;
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
-
-.project-content img:hover {
-  transform: scale(1.05);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  filter: none;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
+  .project-content img:hover {
+    transform: scale(1.05);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: none;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
 
 .project-content figcaption {
   z-index: 100;
@@ -205,6 +193,11 @@ figcaption p {
 
 .project-content a:hover + figcaption p {
   opacity: 1; }
+
+.about, #contact-content, .other {
+  -webkit-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
+  -moz-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
+  box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75); }
 
 nav {
   position: fixed;
@@ -229,12 +222,10 @@ nav ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8); }
-
-nav ul li a:hover {
-  color: rgba(0, 0, 0, 0.6); }
-
-nav ul li a:focus {
-  color: white; }
+  nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.6); }
+  nav ul li a:focus {
+    color: white; }
 
 .active {
   -webkit-box-shadow: 0 0 1px 0 rgba(34, 34, 34, 0.75);
@@ -244,11 +235,9 @@ nav ul li a:focus {
   background-color: #bcbcbc;
   text-shadow: 0px 1px 1px white;
   border-radius: 5px; }
-
-.active:hover {
-  color: rgba(0, 0, 0, 0.75); }
-
-.active:focus {
-  color: rgba(0, 0, 0, 0.75); }
+  .active:hover {
+    color: rgba(0, 0, 0, 0.75); }
+  .active:focus {
+    color: rgba(0, 0, 0, 0.75); }
 
 /*# sourceMappingURL=application.css.map */

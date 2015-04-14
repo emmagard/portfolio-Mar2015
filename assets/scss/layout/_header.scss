@@ -4,7 +4,7 @@
   width: 100%;
   background-size: cover;
   max-height: 100%;
-  color: white;
+  color: $color-header-heading;
 }
 
 hgroup{
@@ -18,16 +18,15 @@ hgroup h1{
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 4px;
-  color: white;
+  color: $color-header-heading;
   margin: 0;
   padding-top: 20%;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 hgroup h3{
   text-align: center;
-  color: white;
+  color: $color-header-heading;
   font-family: 'Montserrat', sans-serif;
   /*-webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
