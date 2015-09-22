@@ -2,15 +2,14 @@
 <html>
 
   <head>
-    <meta charset= "utf-8" />
+    <meta charset="utf-8" />
     <title>Portfolio Built by Emma</title>
-    <link rel= "stylesheet" href= "assets/css/style.css">
-    <link rel= "stylesheet" href= "lib/slick/slick.css"/>
-    <link rel= "stylesheet" href= "lib/slick/slick-theme.css">
-    <link rel= "stylesheet" href= "http://cdn.foundation5.zurb.com/foundation.css">
-    <link rel= 'stylesheet' href= 'http://fonts.googleapis.com/css?family=Montserrat:400,700' >
-    <link rel= "stylesheet" href= "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
-    <link rel= "shortcut icon" href= "favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700' >
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+    <link rel="shortcut icon" href="favicon.ico">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,14 +25,14 @@
   <body>
     <nav>
       <ul>
-        <li><a class= "active" href= "#home">Home</a></li>
-        <li><a href= "#first-section">About</a></li>
-        <li><a href= "#second-section">Tech Projects</a></li>
-        <li><a href= "#third-section">Other Projects</a></li>
-        <li><a href= "#contact">Contact</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#first-section">About</a></li>
+        <li><a href="#second-section">Tech Projects</a></li>
+        <li><a href="#third-section">Other Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section id= "home">
+    <section id="home">
 
       <hgroup>
         <h1>EMMA GARDNER</h1>
@@ -41,13 +40,68 @@
       </hgroup>
     </section><!-- header -->
 
+    <section id="portfolio">
+      <div class="portfolio-container">
+        <figure class="portfolio-project clear-fix">
+          <a class="portfolio-project__link" href="http://emmagard.github.io/gracegardner/" target="blank">
+            <div id="project_image1" class="portfolio-project__image"></div>
+          </a>
+          <figcaption class="portfolio-project__caption">
+            <h1>Portfolio-Grace Gardner<span>May 2015</span></h1>
+
+          A portfolio site for my sister. I kept it simple using HTML, CSS, and a touch of Javascript.
+          </figcaption>
+        </figure>
+        <figure class="portfolio-project clear-fix">
+          <a class="portfolio-project__link" href="https://github.com/emmagard/weather" target="blank">
+            <div id="project_image2" class="portfolio-project__image"></div>
+          </a>
+          <figcaption class="portfolio-project__caption">
+            <h1>Weather<span>February 2015</span></h1>
+
+          I used <b>AngularJS</b> to display the forecast for today, tomorrow, and for the next 5 days. Almost ready for deployment! Clicking the image will take you to the <b>GitHub</b> repo for this project.
+          </figcaption>
+        </figure>
+        <figure class="portfolio-project clear-fix">
+          <a class="portfolio-project__link" href="http://www.quadrupedsllc.com/" target="blank">
+            <div id="project_image3" class="portfolio-project__image"></div>
+          </a>
+          <figcaption class="portfolio-project__caption">
+            <h1>Quadrupeds<span>January 2015</span></h1>
+
+          Quadrupeds pet services. An informational site for a friend's growing business. I kept it simple using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Foundation</b>. It was really exciting to build a website that was going to help a business grow.
+          </figcaption>
+        </figure>
+        <figure class="portfolio-project clear-fix">
+          <a class="portfolio-project__link" href="http://helloboston.herokuapp.com/" target="blank">
+            <div id="project_image4" class="portfolio-project__image"></div>
+          </a>
+          <figcaption class="portfolio-project__caption">
+            <h1>Hello, Boston<span>July 2014</span></h1>
+
+          For my first project in General Assembly's WDI program I created a community website for the city of Boston. Check the weather, Instagram, and read articles with the help of <b>APIs</b>. I used <b>Ruby on Rails</b> to create a posting feature and <b>Ajax</b> to assist in the insertion of the comments. I had <b>Bootstrap</b>'s help to style this project. Other Technologies used: <b>PostgreSQL</b>
+          </figcaption>
+        </figure>
+        <figure class="portfolio-project clear-fix">
+          <a class="portfolio-project__link" href="http://emmagard.github.io/" target="blank">
+            <div id="project_image5" class="portfolio-project__image"></div>
+          </a>
+          <figcaption class="portfolio-project__caption">
+            <h1>First Website<span>March 2014</span></h1>
+
+          This is my very first website I ever made and deployed! I've defintiely grown over the past year. I only used <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> (to create my own image slider). This was when I learned how difficult it is to position elements where you want them!
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+<!--
     <section id= "first-section">
       <div class= "about">
         <p>I'm a builder and a maker, passionate about learning and combining different elements to create a functional unified product. In my work, I've found that JavaScript is the language that I am most passionate about exploring; as both a client and server side tool.</p>
       </div>
-    </section><!-- first-section -->
+    </section>  first-section -->
 
-    <section id= "second-section">
+   <!-- <section id= "second-section">
       <div id= "project-group">
         <figure class= "project-content">
           <a href= "https://github.com/emmagard/weather" target= "blank">
@@ -77,10 +131,10 @@
           </a>
             <figcaption><p class= "figcap">This is my very first website I ever made and deployed! I've defintiely grown over the past year. I only used <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> (to create my own image slider). This was when I learned how difficult it is to position elements where you want them!</p></figcaption>
         </figure>
-      </div><!-- project-group -->
-    </section><!-- second-section -->
+      </div>
+    </section> second-section -->
 
-    <section id= "third-section">
+   <!-- <section id= "third-section">
       <div class= "other">
         <div id="creative-group">
           <div class="single-item">
@@ -132,12 +186,12 @@
           </div>
         </div>
       </div>
-    </section><!-- third-section -->
+    </section> third-section -->
 
 
-    <section id="contact">
-    <!-- <img src="assets/images/GA_08_14-154.jpg" id="portrait">-->
-      <div id="contact-content">
+   <!-- <section id="contact">
+    <img src="assets/images/GA_08_14-154.jpg" id="portrait">-->
+      <!--<div id="contact-content">
         <h1 id="contact-heading">EMMA GARDNER</h1>
         <p>Boston, MA
         <br>
@@ -161,7 +215,7 @@
     <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
     <script src="assets/js/app.js"></script>
 
+
+ -->
   </body>
-
-
 </html>

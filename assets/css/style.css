@@ -1,8 +1,16 @@
-
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /*-----------------------------HEADER----------------------------------*/
 
+
+
 #home{
-  background: url("../images/IMG_1376.jpg") no-repeat center bottom;
+  background-image: url(../images/IMG_1376.jpg);
+  background-color: #FF43FB;
+  background-blend-mode: overlay;
   height: 90%;
   width: 100%;
   background-size: cover;
@@ -13,9 +21,9 @@
 nav{
   position: fixed;
   z-index: 500;
-  background-color: rgba(255,255,255,0.5);
+  background-color: #2A00A2;
   width: 100%;
-  display: none;
+  height: 60px;
 }
 
 nav ul{
@@ -26,20 +34,22 @@ nav ul{
 
 nav ul li{
   display: inline-block;
-  font-size: 2rem;
-  padding: 5px 25px;
+  font-size: 1rem;
+  line-height: 60px;
 }
 
 nav ul li a{
-  color: white;
+  color: #FFDBFB;
   padding: 5px 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  line-height: 60px;
+  text-decoration: none;
+  transition: ease .4s;
 }
 
 nav ul li a:hover{
-  color: rgba(0,0,0,0.6);
+  color: #FF43FB;
 }
 
 nav ul li a:focus{
@@ -48,35 +58,34 @@ nav ul li a:focus{
 
 
 .active{
-  -webkit-box-shadow: 0 0 1px 0 rgba(34,34,34,.75);
-    -moz-box-shadow: 0 0 1px 0 rgba(34,34,34,.75);
-      box-shadow: 0 0 1px 0 rgba(34,34,34,.75);
-  color: rgba(0,0,0,0.75);
-  background-color: rgba(188,188,188, 1);
-  text-shadow: 0px 1px 1px white;
+  color: #FFDBFB;
+  background-color: #2A00A2;
   border-radius: 5px;
-
+  border: 2px solid #FFDBFB;
+  transition: ease .4s;
 }
 
 .active:hover{
-  color: rgba(0,0,0,0.75);
+  color: #FF43FB;
+  background-color: #2A00A2;
+  border-radius: 5px;
+  border: 2px solid #FF43FB;
 }
 
 .active:focus{
-  color: rgba(0,0,0,0.75);
+  color: #FFDBFB;
 }
 
 hgroup{
   font-family: 'Montserrat', sans-serif;
   margin: auto;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  text-rendering: optimizeLegibility;
 }
 
 hgroup h1{
   text-align: center;
   font-size: 80px;
   font-weight: 700;
-  letter-spacing: 4px;
   color: white;
   margin: 0;
   padding-top: 20%;
@@ -91,6 +100,84 @@ hgroup h3{
   /*-webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
       -animation: pulsate .8s infinite alternate;*/
+}
+
+.clear-fix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#portfolio {
+  background-color: #FFDBFB;
+  padding: 55px 0;
+}
+
+.portfolio-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.portfolio-project {
+  margin: 55px 0;
+}
+
+.portfolio-project__caption {
+  float: right;
+  width: 60%;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  color: #2A00A2;
+  text-rendering: optimizeLegibility;
+}
+
+.portfolio-project__caption h1 {
+  font-size: 32px;
+}
+
+.portfolio-project__caption h1 span {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.portfolio-project__link {
+  float: left;
+  width:30%;
+}
+
+.portfolio-project__image {
+  background-color: #2A00A2;
+  background-blend-mode: luminosity;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  border-radius: 100%;
+  border: 2px white solid;
+  transition: ease .4s;
+}
+
+.portfolio-project__image:hover{
+  transform: scale(1.15);
+}
+
+#project_image1 {
+  background-image: url(../images/grace.jpg);
+}
+
+#project_image2 {
+  background-image: url(../images/localhost_8000___.jpg);
+}
+
+#project_image3 {
+  background-image: url(../images/Quadrupeds.jpg);
+}
+
+#project_image4 {
+  background-image: url(../images/AtAGlance.jpg);
+}
+
+#project_image5 {
+  background-image: url(../images/About_Emma.jpg);
 }
 
 @-webkit-keyframes pulsate{
@@ -109,11 +196,9 @@ hgroup h3{
 /*-----------------------FIRST-SECTION-ABOUT--------------------------------*/
 
 #first-section{
-  background: url("../images/index_html.jpg") no-repeat center top fixed;
-  background-size: cover;
+  background-color: #FF43FB;
   height: 100%;
   width: 100%;
-  background-color: white;
   position: relative;
 
 }
