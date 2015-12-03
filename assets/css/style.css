@@ -2,46 +2,64 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+
 /*-----------------------------HEADER----------------------------------*/
 
-
-
 #home{
-  background-image: url(../images/IMG_1376.jpg);
-  background-color: #FF43FB;
-  background-blend-mode: overlay;
+  background-image: url(../images/polkadot-small.jpg);
+ /* background-color: black;
+  background-blend-mode: overlay;*/
   height: 90%;
   width: 100%;
   background-size: cover;
   max-height: 100%;
   color: white;
+  position: relative;
 }
 
 nav{
+  background-image: url(../images/IMG_1376.jpg);
+  opacity: 0.7;
   position: fixed;
   z-index: 500;
   background-color: #2A00A2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   width: 100%;
+  height: 100%;
+  top: 0;
+  transition: ease 2s;
+}
+
+nav.scrolled {
   height: 60px;
 }
 
 nav ul{
   display: block;
   margin: auto;
-  text-align: center;
+  text-align: right;
+  padding: 0;
 }
 
 nav ul li{
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 60px;
 }
 
+nav ul li:last-child {
+  padding-right: 40px;
+}
+
 nav ul li a{
-  color: #FFDBFB;
+  color: white;
   padding: 5px 10px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 60px;
   text-decoration: none;
@@ -56,47 +74,31 @@ nav ul li a:focus{
   color: white;
 }
 
-
-.active{
-  color: #FFDBFB;
-  background-color: #2A00A2;
-  border-radius: 5px;
-  border: 2px solid #FFDBFB;
-  transition: ease .4s;
-}
-
-.active:hover{
-  color: #FF43FB;
-  background-color: #2A00A2;
-  border-radius: 5px;
-  border: 2px solid #FF43FB;
-}
-
-.active:focus{
-  color: #FFDBFB;
-}
-
 hgroup{
-  font-family: 'Montserrat', sans-serif;
   margin: auto;
   text-rendering: optimizeLegibility;
+  width: 50%;
+  padding-top: 20%;
+  position: relative;
 }
 
 hgroup h1{
   text-align: center;
   font-size: 80px;
   font-weight: 700;
-  color: white;
-  margin: 0;
-  padding-top: 20%;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: white;
+  margin-bottom: 50px;
 
 }
 
 hgroup h3{
   text-align: center;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5px;
   /*-webkit-animation: pulsate .8s infinite alternate;
     -moz-animation: pulsate .8s infinite alternate;
       -animation: pulsate .8s infinite alternate;*/
@@ -108,8 +110,12 @@ hgroup h3{
   clear: both;
 }
 
-#portfolio {
-  background-color: #FFDBFB;
+
+
+/*-----------------------------WORK----------------------------------*/
+
+#work {
+  background-color: white;
   padding: 55px 0;
 }
 
@@ -126,13 +132,14 @@ hgroup h3{
   float: right;
   width: 60%;
   line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
-  color: #2A00A2;
+  color: black;
   text-rendering: optimizeLegibility;
 }
 
 .portfolio-project__caption h1 {
   font-size: 32px;
+  padding-bottom: 5px;
+  border-bottom: solid black 2px;
 }
 
 .portfolio-project__caption h1 span {
@@ -146,7 +153,7 @@ hgroup h3{
 }
 
 .portfolio-project__image {
-  background-color: #2A00A2;
+  background-color: black;
   background-blend-mode: luminosity;
   width: 250px;
   height: 250px;
@@ -180,206 +187,32 @@ hgroup h3{
   background-image: url(../images/About_Emma.jpg);
 }
 
-@-webkit-keyframes pulsate{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-@-moz-keyframes pulsate{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-@keyframes pulsate{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
 
-/*-----------------------FIRST-SECTION-ABOUT--------------------------------*/
 
-#first-section{
-  background-color: #FF43FB;
-  height: 100%;
-  width: 100%;
-  position: relative;
+/*-----------------------CONTACT--------------------------------*/
 
+#contact {
+  background-image: url(../images/IMG_1376.jpg);
+  background-color: #2A00A2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.7;
 }
 
-.about{
-  background-color: rgba(255,255,255,0.85);
-  text-align: left;
-  margin: 15% 0 0 50% ;
-  width: 50%;
-  z-index: 200;
-  position: absolute;
-  padding: 20px;
-  border-radius: 40px 0 0 40px;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-    -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-      box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-}
-
-.about p{
+.contact_list {
+  padding: 40px 40px;
+  color: rgba(52, 1, 30, 1);
   font-size: 1.5rem;
-  margin: 20px;
-  color: #333;
-}
-
-/*-----------------------SECOND-SECTION-PROJECTS--------------------------------*/
-
-#second-section{
-  background: url("../images/IMG_4132.jpg") no-repeat center bottom scroll;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  float: left;
-  position: relative;
-}
-
-#project-group{
-  padding-top: 5%;
-}
-
-.project-content{
-  float: left;
-  width: 25%;
   margin: 0;
-  position: relative;
-  overflow: hidden;
+  z-index: 7;
+  list-style: none;
 }
 
-.project-content img{
-  float: left;
-  display: block;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all .6s ease;
-  -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-      filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+.contact_list li {
+  padding-bottom: 2px;
 }
 
-.project-content img:hover{
-  transform: scale(1.05);
-  -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-      filter: none;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-}
-
-.project-content figcaption{
-  z-index: 100;
-  color: black;
-  display: inline;
-  text-align: left;
-}
-
-figcaption p{
-  -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-  margin-top: 100%;
-  padding: 10%;
-  background-color: rgba(255,255,255,0.85);
-  opacity: 0;
-  border-radius: 0 0 40px 40px;
-}
-
-.project-content a:hover + figcaption p{
-  opacity: 1;
-}
-/*---------------------------THIRD-SECTION-OTHER--------------------------------*/
-
-#third-section{
-  background: url("../images/IMG_5040.jpg") no-repeat center bottom;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  float: left;
-}
-
-#third-section h2{
-  color: white;
-  text-align: center;
-}
-
-.other{
-  color: #333;
-  background-color: rgba(255,255,255,0.85);
-  text-align: left;
-  margin: 10% 30%;
-  width: 40%;
-  z-index: 200;
-  position: absolute;
-  padding: 10px 20px 5px 20px;
-  border-radius: 40px;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-    -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-    box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-}
-
-.slick-slide img{
-  margin: 4% auto;
-}
-
-figcaption.creative-caption{
-  text-align: center;
-}
-
-/*-------------------------------CONTACT--------------------------------*/
-
-#contact{
-  background: url("../images/IMG_1823.jpg") no-repeat;
-  background-size: cover;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  float: left;
-  position: relative;
-}
-
-#contact-content{
-  -webkit-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-    -moz-box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-      box-shadow: 0 0 30px 5px rgba(34,34,34,.75);
-  margin: 15% 30% 0;
-  background-color: rgba(255,255,255,0.7);
-  position: absolute;
-  display: block;
-  width: 40%;
-  border-radius: 40px;
-  padding: 2%;
-}
-
-#contact-heading{
-  padding-top: 3.5%;
-  font-size: 2rem;
-  color: #333;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-#contact-content p{
-  color: #333;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.icon{
-  color: #333;
-  background-color: none;
-  font-size: 2rem;
-  margin-right: 2% ;
-  margin-left: 2%;
-}
-
-.icon:hover{
-  color: pink;
-}
-
-.icon:focus{
-  color: pink;
+.icon {
+  color: rgba(52, 1, 30, 1);
 }

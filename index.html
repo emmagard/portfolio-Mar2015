@@ -3,10 +3,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio Built by Emma</title>
+    <title>Emma Gardner</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="lib/slick/slick.css"/>
-    <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700' >
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
     <link rel="shortcut icon" href="favicon.ico">
@@ -23,16 +21,15 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#first-section">About</a></li>
-        <li><a href="#second-section">Tech Projects</a></li>
-        <li><a href="#third-section">Other Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
     <section id="home">
+      <nav>
+        <ul>
+          <li><a class="active" href="#home">home</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
 
       <hgroup>
         <h1>EMMA GARDNER</h1>
@@ -40,7 +37,7 @@
       </hgroup>
     </section><!-- header -->
 
-    <section id="portfolio">
+    <section id="work">
       <div class="portfolio-container">
         <figure class="portfolio-project clear-fix">
           <a class="portfolio-project__link" href="http://emmagard.github.io/gracegardner/" target="blank">
@@ -52,6 +49,7 @@
           A portfolio site for my sister. I kept it simple using HTML, CSS, and a touch of Javascript.
           </figcaption>
         </figure>
+
         <figure class="portfolio-project clear-fix">
           <a class="portfolio-project__link" href="https://github.com/emmagard/weather" target="blank">
             <div id="project_image2" class="portfolio-project__image"></div>
@@ -61,7 +59,9 @@
 
           I used <b>AngularJS</b> to display the forecast for today, tomorrow, and for the next 5 days. Almost ready for deployment! Clicking the image will take you to the <b>GitHub</b> repo for this project.
           </figcaption>
+
         </figure>
+
         <figure class="portfolio-project clear-fix">
           <a class="portfolio-project__link" href="http://www.quadrupedsllc.com/" target="blank">
             <div id="project_image3" class="portfolio-project__image"></div>
@@ -72,6 +72,7 @@
           Quadrupeds pet services. An informational site for a friend's growing business. I kept it simple using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Foundation</b>. It was really exciting to build a website that was going to help a business grow.
           </figcaption>
         </figure>
+
         <figure class="portfolio-project clear-fix">
           <a class="portfolio-project__link" href="http://helloboston.herokuapp.com/" target="blank">
             <div id="project_image4" class="portfolio-project__image"></div>
@@ -82,6 +83,7 @@
           For my first project in General Assembly's WDI program I created a community website for the city of Boston. Check the weather, Instagram, and read articles with the help of <b>APIs</b>. I used <b>Ruby on Rails</b> to create a posting feature and <b>Ajax</b> to assist in the insertion of the comments. I had <b>Bootstrap</b>'s help to style this project. Other Technologies used: <b>PostgreSQL</b>
           </figcaption>
         </figure>
+
         <figure class="portfolio-project clear-fix">
           <a class="portfolio-project__link" href="http://emmagard.github.io/" target="blank">
             <div id="project_image5" class="portfolio-project__image"></div>
@@ -94,128 +96,28 @@
         </figure>
       </div>
     </section>
-<!--
-    <section id= "first-section">
-      <div class= "about">
-        <p>I'm a builder and a maker, passionate about learning and combining different elements to create a functional unified product. In my work, I've found that JavaScript is the language that I am most passionate about exploring; as both a client and server side tool.</p>
-      </div>
-    </section>  first-section -->
 
-   <!-- <section id= "second-section">
-      <div id= "project-group">
-        <figure class= "project-content">
-          <a href= "https://github.com/emmagard/weather" target= "blank">
-            <img src= "assets/images/localhost_8000___.jpg" width= "25%" height= "25%">
-          </a>
-            <figcaption><p class= "figcap">My most recent work. I am using <b>AngularJS</b> to display the forecast for today, tomorrow, and for the next 5 days. Almost ready for deployment! Clicking the image will take you to the <b>GitHub</b> repo for this project.</p></figcaption>
-        </figure>
-
-        <figure class= "project-content">
-          <a href= "http://www.quadrupedsllc.com/" target= "blank">
-            <img src= "assets/images/Quadrupeds.jpg"  width= "25%" height= "25%">
-          </a>
-            <figcaption><p class= "figcap">Quadrupeds pet services. An informational site for a friend's growing business. I kept it simple using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Foundation</b>. It was really exciting to build a website that was going to help a business grow.</p></figcaption>
-        </figure>
-
-        <figure class= "project-content">
-          <a href= "http://helloboston.herokuapp.com/" target= "blank">
-            <img src= "assets/images/AtAGlance.jpg" width= "25%" height= "25%">
-          </a>
-            <figcaption>
-            <p class= "figcap">For my first project in General Assembly's Web Development Immersive program I created a community website for the city of Boston. Check the weather, Instagram, and read articles with the help of <b>APIs</b>. I used <b>Ruby on Rails</b> to create a posting feature and <b>Ajax</b> to assist in the insertion of the comments. I had <b>Bootstrap</b>'s help to stylize this project. Other Technologies used: <b>PostgreSQL</b></p></figcaption>
-        </figure>
-
-        <figure class="project-content">
-          <a href= "http://emmagard.github.io/" target= "blank">
-            <img src= "assets/images/About_Emma.jpg" width= "25%" height= "25%">
-          </a>
-            <figcaption><p class= "figcap">This is my very first website I ever made and deployed! I've defintiely grown over the past year. I only used <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> (to create my own image slider). This was when I learned how difficult it is to position elements where you want them!</p></figcaption>
-        </figure>
-      </div>
-    </section> second-section -->
-
-   <!-- <section id= "third-section">
-      <div class= "other">
-        <div id="creative-group">
-          <div class="single-item">
-            <figure>
-              <img class= "creative" src= "assets/images/DSC00531.JPG" height="400px" width="400px">
-              <figcaption class= "creative-caption">"Draw your sneaker in 7 different ways stacked on eachother..."</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/DSC00534.JPG" height="400px" width="400px">
-              <figcaption class= "creative-caption">Quick live model sketches from a college figure drawing class.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_4370.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">I think I drew this kind of quickly not thinking it would resemble my dog... but it turned out it did!</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/picstitch.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">A color fashion sketch complete with swatch... and a photo of the final product.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_2951.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">One of my favorite dresses I've made to date. Cut designed and sewn all in one day.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_1255.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">Dress making mid-process. I made the pattern and contructed this dress on my own.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_0084.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">I love this bathroom. One of the rooms in an installation I worked on with ALG Interiors.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_0137.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">Another interior I helped install. Elizabeth Berry Interiors.</figcaption>
-            </figure>
-
-            <figure>
-              <img class= "creative" src= "assets/images/IMG_0067.jpg" height="400px" width="400px">
-              <figcaption class= "creative-caption">A bedroom from the ALG Interiors installation.</figcaption>
-            </figure>
-
-          </div>
-        </div>
-      </div>
-    </section> third-section -->
-
-
-   <!-- <section id="contact">
-    <img src="assets/images/GA_08_14-154.jpg" id="portrait">-->
-      <!--<div id="contact-content">
-        <h1 id="contact-heading">EMMA GARDNER</h1>
-        <p>Boston, MA
-        <br>
-        781.385.9124
-        <br>
-        emmagard@gmail.com
-        <br>
-        <br>
-        <a href="https://github.com/emmagard" target="blank" title="GitHub" class="icon"><i class="fa fa-github fa-fw"></i></a>
-        <a href="https://www.linkedin.com/in/emmagard" target="blank" title="LinkedIn" class="icon"><i class="fa fa-linkedin fa-fw"></i></a>
-        <a href="assets/images/Resume-gray.pdf" target="blank" title="Resume" class="icon"><i class="fa fa-paperclip fa-fw" id="resume"></i></a>
-        <a href="https://twitter.com/e_m_m_m_m_a_a" target="blank" title="Twitter" class="icon"><i class="fa fa-twitter fa-fw" id="twitter"></i></a>
-        </p>
-      </div>
-
+    <section id="contact">
+      <ul class="contact_list">
+        <li>emmagard@gmail.com</li>
+        <li>781.385.9124</li>
+        <li>
+          <a href="https://github.com/emmagard" target="blank" title="GitHub" class="icon">
+            <i class="fa fa-github fa-fw"></i></a>
+          <a href="https://www.linkedin.com/in/emmagard" target="blank" title="LinkedIn" class="icon">
+            <i class="fa fa-linkedin fa-fw"></i></a>
+          <a href="assets/images/Resume-gray.pdf" target="blank" title="Resume" class="icon">
+            <i class="fa fa-paperclip fa-fw" id="resume"></i></a>
+          <a href="https://twitter.com/e_m_m_m_m_a_a" target="blank" title="Twitter" class="icon">
+            <i class="fa fa-twitter fa-fw" id="twitter"></i></a>
+        </li>
+      </ul>
     </section>
+
+
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
-    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
     <script src="assets/js/app.js"></script>
 
-
- -->
   </body>
 </html>
