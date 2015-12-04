@@ -5,14 +5,15 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 
 /*-----------------------------HEADER----------------------------------*/
 
 #home{
   background-image: url(../images/polkadot-small.jpg);
- /* background-color: black;
-  background-blend-mode: overlay;*/
   height: 90%;
   width: 100%;
   background-size: cover;
@@ -74,34 +75,42 @@ nav ul li a:focus{
   color: white;
 }
 
-hgroup{
+.header {
   margin: auto;
   text-rendering: optimizeLegibility;
-  width: 50%;
-  padding-top: 20%;
+  width: 100%;
+  height: 100%;
   position: relative;
+  opacity: 0.7;
+  background-color: white;
+  height: 100%;
 }
 
-hgroup h1{
+.header-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 35%;
+}
+
+.header h1{
   text-align: center;
   font-size: 80px;
   font-weight: 700;
   color: black;
   background-color: white;
-  margin-bottom: 50px;
-
+  margin-bottom: 10px;
 }
 
-hgroup h3{
+.header h3{
   text-align: center;
   color: black;
   background-color: white;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 5px;
-  /*-webkit-animation: pulsate .8s infinite alternate;
-    -moz-animation: pulsate .8s infinite alternate;
-      -animation: pulsate .8s infinite alternate;*/
+  font-size: 24px;
 }
 
 .clear-fix:after{
@@ -122,6 +131,7 @@ hgroup h3{
 .portfolio-container {
   width: 60%;
   margin: 0 auto;
+  max-width: 865px;
 }
 
 .portfolio-project {
@@ -172,18 +182,22 @@ hgroup h3{
 }
 
 #project_image2 {
-  background-image: url(../images/localhost_8000___.jpg);
+  background-image: url(../images/emandsant.jpg);
 }
 
 #project_image3 {
-  background-image: url(../images/Quadrupeds.jpg);
+  background-image: url(../images/localhost_8000___.jpg);
 }
 
 #project_image4 {
-  background-image: url(../images/AtAGlance.jpg);
+  background-image: url(../images/Quadrupeds.jpg);
 }
 
 #project_image5 {
+  background-image: url(../images/AtAGlance.jpg);
+}
+
+#project_image6 {
   background-image: url(../images/About_Emma.jpg);
 }
 
@@ -213,6 +227,138 @@ hgroup h3{
   padding-bottom: 2px;
 }
 
+.icon:hover {
+  color: black;
+}
+
 .icon {
   color: rgba(52, 1, 30, 1);
+}
+
+
+
+/*-----------------------------MEDIA-QUERIES----------------------------------*/
+
+@media screen and (max-width: 1400px) {
+
+  .header h1 {
+    font-size: 70px;
+    line-height: 1.2;
+  }
+
+  .portfolio-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+
+   .header h1 {
+    font-size: 70px;
+  }
+
+  .portfolio-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+   .header h1 {
+    font-size: 70px;
+  }
+
+  .portfolio-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .header h1 {
+    font-size: 60px;
+  }
+
+  .header h3 {
+    font-size: 22px;
+  }
+
+  .portfolio-container {
+    width: 90%;
+  }
+
+  .portfolio-project__caption {
+    width: 55%;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+   .header h1 {
+    font-size: 50px;
+  }
+
+  .header h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-project {
+    margin: 65px 0;
+  }
+
+  .portfolio-project__caption {
+    float:  none;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .portfolio-project__link {
+    float: none;
+  }
+
+  .portfolio-project__image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    padding-right: 0;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .header h3 {
+    font-size: 18px;
+  }
+
+  .portfolio-project {
+    margin: 65px 0;
+  }
+
+  .portfolio-project__caption {
+    float:  none;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .portfolio-project__caption h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .portfolio-project__link {
+    float: none;
+  }
+
+  .portfolio-project__image {
+    margin: 0 auto;
+  }
 }
